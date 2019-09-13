@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Midgard Systems</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <!-- Your custom styles (optional) -->
+  <link href="css/slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive Midgard -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Owl Carousel min css -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" id="wsl-widget-css" href="css/style_5.2.2.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/customeStyleColor.css">
+
+  <link rel="stylesheet" id="compiled.css-css" href="css/compiled-4.8.7.min.css?ver=4.8.7" type="text/css" media="all">
+</head>
+
+<body>
+  <!-- Modals -->
+  
+    <!-- Start Search modal -->
+    <div class="search-area bg_search">
+        <div class="container" >
+            <div class="row" >
+                <div class="col-md-12" >
+                    <div class="search-inner">
+                        <form>
+                            <input placeholder="Buscar..." type="text">
+                            <button type="submit" class="waves-effect waves-light">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <div class="search-close-btn">
+                            <span class="search-close-btn-icon">
+                                <i class="fa fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Search modal -->
+
+    <!-- Start shopping cart modal -->
+    <div class="shp-cart-panel">
+        <div class="shp-cart-inner">
+            <div class="shp-cart-btn-close">
+                <a href="#"><i class="fa fa-times"></i></a>
+            </div>
+
+            <div class="shp-cart-wrap">
+                
+                <div class="shp-cart-single-product">
+                    <div class="shp-cart-pro-thumb">
+                        <a href="#">
+                            <img src="img/products/99x119.jpg" alt="product images">
+                        </a>
+                    </div>
+                    <div class="shp-cart-product-details">
+                        <h2><a href="product-details.html">BO&amp;Play Wireless Speaker</a></h2>
+                        <span class="quantity">QTY: 1</span>
+                        <span class="shp__price">$105.00</span>
+                    </div>
+                    <div class="shp-cart-product-bn-remove">
+                        <a href="#" title="Remove this item"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="shp-cart-single-product">
+                    <div class="shp-cart-pro-thumb">
+                        <a href="#">
+                            <img src="img/products/99x119.jpg" alt="product images">
+                        </a>
+                    </div>
+                    <div class="shp-cart-product-details">
+                        <h2><a href="product-details.html">Brone Candle</a></h2>
+                        <span class="quantity">QTY: 1</span>
+                        <span class="shp__price">$25.00</span>
+                    </div>
+                    <div class="shp-cart-product-bn-remove">
+                        <a href="#" title="Remove this item"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+            <ul class="shp-cart-total">
+                <li class="subtotal">Subtotal:</li>
+                <li class="total__price">$130.00</li>
+            </ul>
+            <ul class="shopping__btn">
+                <li><a href="cart.html">View Cart</a></li>
+                <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Search modal -->
+    
+    <!-- Login / Register Form-->
+    <div id="modalLRForm" class="modal fade" role="dialog" tabindex="-1"  aria-labelledby="myModalLabel" aria-hidden="true" style="padding-right: 17px !important;">
+      <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Modal cascading tabs-->
+          <div class="modal-c-tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs md-tabs tabs-2 bg_primaryColor darken-3" role="tablist">
+              <li class="nav-item waves-effect waves-light">
+                <a class="nav-link active" data-toggle="tab" href="#tabLogin" role="tab">
+                  <i class="fas fa-user mr-1"></i> Ingresar</a>
+              </li>
+              <li class="nav-item waves-effect waves-light">
+                <a class="nav-link" data-toggle="tab" href="#tabRegister" role="tab">
+                  <i class="fas fa-user-plus mr-1"></i> Crear cuenta</a>
+              </li>
+            </ul>
+
+            <!-- Tab panels -->
+            <div class="tab-content">
+                <!--Panel Login-->
+                <div id="tabLogin" class="tab-pane fade in active show" role="tabpanel">
+    
+                  <!--Body-->
+                  <div class="modal-body mb-1">
+                    <div class="md-form form-sm">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input id="txtEmail" type="text"  class="form-control form-control-sm">
+                      <label for="txtEmail" class="">Email</label>
+                    </div>
+    
+                    <div class="md-form form-sm">
+                      <i class="fas fa-lock prefix"></i>
+                      <input id="txtPsw" type="password" class="form-control form-control-sm">
+                      <label for="txtPsw" class="">Password</label>
+                    </div>
+
+                    <div class="text-center mt-4">
+                      <button id="btnLogin" class="btn btn-info waves-effect waves-light">Ingresar
+                        <i class="fas fa-sign-in ml-1"></i>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <div class="options text-center text-md-right mt-1">
+                      <p>¿No es un miembro?
+                        <a id="btnTabRegister" class="blue-text">Regístrate</a>
+                      </p>
+                      <p>Olvidó su 
+                        <a id="btnOpenRecoverPassword" class="blue-text">Password</a>?
+                      </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                  </div>
+    
+                </div>
+                <!--/.Panel Login-->
+    
+                <!--Panel Register-->
+                <div id="tabRegister" class="tab-pane fade"  role="tabpanel">
+    
+                  <!--Body-->
+                  <div class="modal-body">
+                    <div class="md-form form-sm">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input id="txtEmail" type="text"  class="form-control form-control-sm">
+                      <label for="txtEmail">Email</label>
+                    </div>
+    
+                    <div class="md-form form-sm">
+                      <i class="fas fa-lock prefix"></i>
+                      <input id="txtPws" type="password"class="form-control form-control-sm">
+                      <label for="txtPws">Password</label>
+                    </div>
+                    
+                    <div class="text-center form-sm mt-4">
+                      <button id="btnSignUp" class="btn btn-info waves-effect waves-light">Regístrate
+                        <i class="fas fa-sign-in ml-1"></i>
+                      </button>
+                    </div>
+    
+                  </div>
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <div class="options text-right">
+                      <p class="pt-1">¿Ya tienes una cuenta?
+                        <a id="btnTabLogin" class="blue-text">Iniciar sesión</a>
+                      </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+                <!--/.Panel Register-->
+              </div>
+
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Login / Register Form-->
+
+    <!-- Recover Password --->
+    <div id="modalRecoverPassword" class="modal fade" role="dialog" tabindex="-1"  aria-labelledby="myModalLabel" aria-hidden="true" style="padding-right: 17px !important;">
+      <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Header-->
+          <div class="modal-header light-blue darken-3 white-text">
+            <h4 class="title"><i class="fas fa-unlock"></i> Recuperar Contraseña</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body mb-0">
+
+            <div class="md-form form-sm">
+              <i class="fas fa-envelope prefix"></i>
+              <input id="txtRecoverEmail" type="text"  class="form-control form-control-sm">
+              <label for="txtRecoverEmail" class="">Email</label>
+            </div>
+
+            <div class="text-center mt-4">
+              <button id="btnRecoerAccount" class="btn btn-info waves-effect waves-light">Recuperar contraseña
+                <i class="fas fa-sign-in ml-1"></i>
+              </button>
+            </div>
+          </div>
+ 
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Recover Password -->
+
+  <!-- Modals -->
+
+  <!-- Nav bars -->
+    <!-- Navbar black darken-4--> 
+    <nav id="nav-bar" class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark  scrolling-navbar navbar-transparent">
+
+      <div class="float-left">
+        <!-- Navbar brand -->
+        <a class="navbar-brand text-uppercase" href="#">
+          <img id="navbarLogo" src="img/logo_transparent.png" height="30" alt="mdb logo">
+        </a>
+      </div>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+    
+        <!-- Menu -->
+        <ul class="navbar-nav ml-auto"><!-- ml-auto  mr-auto-->
+    
+          <li class="nav-item menu-primary selected">
+            <a class="nav-link waves-effect waves-light" href="#">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+
+          <!-- Features -->
+          <li class="nav-item menu-primary dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Features
+              <span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 black darken-4 py-5 px-3"
+              aria-labelledby="navbarDropdownMenuLink2">
+              <div class="row">
+                <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                  <h6 class="sub-title font-weight-bold white-text">Featured</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                        architecto
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology -->
+          <li class="nav-item menu-primary dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Technology</a>
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 lighten-4 py-5 px-3" style="background-color: #181a1e!important"
+              aria-labelledby="navbarDropdownMenuLink3">
+              <div class="row">
+                <div class="col-md-12 col-xl-4 sub-menu mb-xl-0 mb-4">
+                  <h6 class="sub-title font-weight-bold white-text">Featured</h6>
+                  <!--Featured image-->
+                  <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/8-col/img%20(37).jpg"
+                      class="img-fluid" alt="First sample image">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                  <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+                  <p class="font-small white-text">
+                    <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                      class="far fa-comments px-1" aria-hidden="true"></i> 20
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
+                  <h6 class="sub-title  font-weight-bold white-text">Related</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-4 sub-menu mb-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Lifestyle -->
+          <li class="nav-item menu-primary dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink4" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Lifestyle</a>
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3" style="background-color: #181a1e!important"
+              aria-labelledby="navbarDropdownMenuLink4">
+              <div class="row">
+                <div class="col-md-6 col-xl-3 sub-menu mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-4 mb-xl-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+                  <!--Featured image-->
+                  <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg"
+                      class="img-fluid" alt="First sample image">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                  <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+                  <p class="font-small text-uppercase white-text">
+                    <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                      class="far fa-comments px-1" aria-hidden="true"></i> 20
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                  <!--Featured image-->
+                  <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg"
+                      class="img-fluid" alt="First sample image">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                  <a class="news-title font-weight-bold pl-0" href="#!">Ut labore et dolore magna</a>
+                  <p class="font-small text-uppercase white-text">
+                    <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 16, 2017 / <i
+                      class="far fa-comments px-1" aria-hidden="true"></i> 25
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                        architecto
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Multi-level dropdown -->
+          <li class="nav-item menu-primary dropdown multi-level-dropdown">
+            <a href="#" id="menu" data-toggle="dropdown"
+              class="nav-link dropdown-toggle "><i class="fas fa-user"></i>
+            </a>
+            <ul class="dropdown-menu mt-2 rounded-0  darken-4 border-0 z-depth-1" style="background-color: #181a1e!important;">
+              <li class="dropdown-item dropdown-submenu p-0">
+                <a href="" class="text-white w-100" data-toggle="modal" data-target="#modalLRForm" style="text-transform: capitalize;">Ingresar</a>
+              </li>
+              <li class="dropdown-item dropdown-submenu p-0">
+                <a id="btnOpenRegister"  class="text-white w-100" style="text-transform: capitalize;">Crear cuenta</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Search -->
+          <li class="nav-item menu-secondary">
+            <a class="nav-link waves-effect waves-light header-search search search-open" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <!-- Shopping cart -->
+          <li id="shopping-cart" class="nav-item menu-secondary">
+            <a class="nav-link waves-effect waves-light" href="#">
+              <i class="fas fa-shopping-cart"></i>        
+            </a>  
+            <span class="counter-item">2</span> 
+          </li>
+        </ul>
+        <!-- Links -->
+    
+    
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+    <!-- Navbar -->   
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav">
+      <ul class="custom-scrollbar">
+        <!-- Logo -->
+        <li>
+            <div class="logo-wrapper waves-light">
+              <a href="#"><img src="img/logo_dark.gif" class="img-fluid flex-center"></a>
+            </div>
+        </li>
+        <!--/. Logo -->
+        <!--Social
+        <li>
+            <ul class="social">
+            <li><a href="#" class="icons-sm fb-ic"><i class="fab fa-facebook-f"> </i></a></li>
+            <li><a href="#" class="icons-sm pin-ic"><i class="fab fa-pinterest"> </i></a></li>
+            <li><a href="#" class="icons-sm gplus-ic"><i class="fab fa-google-plus-g"> </i></a></li>
+            <li><a href="#" class="icons-sm tw-ic"><i class="fab fa-twitter"> </i></a></li>
+            </ul>
+        </li>
+        <--/Social-->
+        <!--Search Form-->
+        <li>
+            <form class="search-form" role="search">
+              <div class="form-group md-form mt-0 pt-1 waves-light">
+                  <input type="text" class="form-control" placeholder="Buscar...">
+              </div>
+            </form>
+        </li>
+        <!--/.Search Form-->
+        <!-- Side navigation links -->
+        <li>
+            <ul class="collapsible collapsible-accordion">
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Submit
+                blog<i class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">Submit listing</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Registration form</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-hand-pointer-o"></i>
+                Instruction<i class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">For bloggers</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">For authors</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                Cuenta <i class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">Ingresar</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Crear cuenta</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-envelope-o"></i> Contact me<i
+                    class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            </ul>
+        </li>
+        <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+    </div>
+    
+    <nav id="navbar-slide" class="mb-5 navbar fixed-top  navbar-expand-lg white scrolling-navbar double-nav" style="position: fixed;overflow: hidden;background-color: #fff;">
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+          <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="fas fa-bars" style="color: #000;"></i>
+          </a>
+        </div>
+
+        <!-- Logo -->
+        <div class="float-left">
+              <!-- Navbar brand -->
+              <a class="navbar-brand text-uppercase" href="#">
+                  <img src="img/logo_transparent.png" alt="mdb logo">
+              </a>
+          </div>
+          
+        <ul class="navbar-nav ml-auto"><!-- ml-auto  mr-auto-->
+      
+
+            
+            <!-- Shopping cart -->
+            <li  id="shopping-cart" class="nav-item menu-secondary">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fas fa-shopping-cart"></i>        
+              </a>  
+              <span class="counter-item">2</span> 
+            </li>
+          </ul>
+          
+        
+    </nav>
+  <!-- Nav bars -->
+  <!--/. Sidebar navigation -->
+    
+  
+
+<main class="bg-white">
+  <section id="slider" class="slider-container slider-one bg_cat-3 section  wow fadeIn">
+    <div class="slide-container slider-activation-wrap owl-carousel">
+
+      <!-- Start Single Slide -->
+      <div class="single-slide animation-style-1 slider-fixed-height" 
+      style="background: rgba(0, 0, 0, 0) url(img/slider/bg/bg-3.jpg) no-repeat scroll 0 0 / cover;">
+          <div class="container">
+              <div class="row align-items_center">
+                  <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                      <div class="slide">
+                          <div class="slider-inner">
+                              <h2 class="text-white">Certificado en Nutrición Deportiva</h2>
+                              <h1 class="text-white">¡Inscribirse!</h1>
+                              <button type="button" class="btn btn-primaryColor waves-effect waves-light">Inscribirse ahora</button>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                      <div class="slide__thumb">
+                          <img src="img/slider/item/item-1.png" alt="slider images">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- End Single Slide -->
+
+      <!-- Start Single Slide -->
+      <div class="single-slide animation-style-1 slider-fixed-height"
+      style="background: rgba(0, 0, 0, 0) url(img/slider/bg/bg-4.jpg) no-repeat scroll 0 0 / cover;">
+          <div class="container">
+              <div class="row align-items_center">
+                  <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                      <div class="slide">
+                          <div class="slider-inner">
+                              <h2 class="text-white">Cursos de nutricion online</h2>
+                              <h1 class="text-white"></h1>
+                              <button type="button" class="btn btn-primaryColor waves-effect waves-light">Inscribirse ahora</button>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                      <div class="slide__thumb">
+                          <img src="img/slider/item/item-3.png" alt="slider images">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- End Single Slide -->
+    </div>
+  </section>
+
+  <section id="about" class="section team-section pb-4 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeIn; animation-iteration-count: 1; animation-delay: 0.3s;">
+    <div class="col-lg-10 col-md-10 col-centered pt-4 pb-4 " >
+      <h1 class="font-weight-bold text-center h1 my-5 border-bottom pb-3">Instituto de Educacion en Deporte y Nutricion</h1>
+      <p class="card-text  text-center" style="font-size: 20px;">INDEN es una institución cuyo principal objetivo es la educación continua en el área de deporte y nutrición, mediante cursos y diplomados interactivos en línea. Es un proyecto de educación adaptado a la condición y necesidades de los alumnos ya que los cursos se toman en línea, a su propio ritmo y acompañados por los tutores y profesores.</p>
+    </div>
+  </section>
+
+  <div class="row col-lg-1 col-md-1 col-centered pb-4" >
+    <img src="img/logo_icon.png" />
+  </div>
+
+  <section id="WhatLearnWithYou" class="section team-section pb-4 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeIn; animation-iteration-count: 1; animation-delay: 0.3s;">
+    <div class="col-lg-10 col-md-10 col-centered pt-4 pb-4" >
+      <h2 class="font-weight-bold text-left mb-3 border-bottom pb-3">¿Porqué elegirnos?</h2>
+      <p class="card-text  text-left" style="font-size: 20px;">Nosotros ofrecemos cursos de actualidad adaptado a diferentes tipos de perfil, con tiempos flexibles, acompañamiento y aval colegiado, que puedes tomar en cualquier lugar y en cualquier hora</p>
+    </div>
+
+    <div class="container">
+      <div class="row col-xs-12 col-lg-12 col-centered" style="font-size: 18px;">
+        <!-- Actualizate -->
+        <div class="col-xs-6 col-lg-6 mb-4">
+          <p class="card-title">
+            <a class="btn-floating btn-lg btn-primaryColor my-0 waves-effect waves-light">
+              <i class="far fa-clock"></i>
+            </a>
+            <b>Actualiza</b> tus conocimiento
+          </p>
+        </div>
+
+        <!-- Diploma de certificación -->
+        <div class="col-xs-6 col-lg-6 mb-4">
+          <p class="card-title">
+            <a class="btn-floating btn-lg btn-primaryColor my-0 waves-effect waves-light">
+                <i class="fas fa-tachometer-alt"></i>
+            </a>
+            <b>Diploma de certificación</b> al aprobar un curso
+          </p>
+        </div>
+
+        <!-- Material exclusivo -->
+        <div class="col-xs-6 col-lg-6 mb-4">
+          <p class="card-title">
+            <a class="btn-floating btn-lg btn-primaryColor my-0 waves-effect waves-light">
+              <i class="fas fa-certificate"></i>
+            </a>
+            <b>Material exclusivo</b> Ejercicios y retos reales
+          </p>
+        </div>
+
+        <!-- Experto -->
+        <div class="col-xs-6 col-lg-6 mb-4">
+          <p class="card-title">
+            <a class="btn-floating btn-lg btn-primaryColor my-0 waves-effect waves-light">
+              <i class="fas fa-tag"></i>
+            </a>
+            Conviértete en un <b>Experto</b>
+          </p>
+        </div>
+
+        <!-- Desarrollarás competencias -->
+        <div class="col-xs-12 col-lg-12 mb-4">
+          <p class="card-title">
+            <a class="btn-floating btn-lg btn-primaryColor my-0 waves-effect waves-light">
+              <i class="far fa-calendar-alt"></i>
+            </a>
+            <b>Desarrollarás competencias</b> para tu práctica profesional en las áreas de nutrición, deporte y entrenamiento fitness
+          </p>
+        </div>
+
+      </div>
+    </div> 
+  </section>
+
+  <style>
+  .circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #ED8D8D;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ED8D8D;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #ED8D8D;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #ED8D8D;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+  </style>
+
+  <section id="howItWork" class="section team-section pb-4 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeIn; animation-iteration-count: 1; animation-delay: 0.3s;">
+    <div class="col-lg-10 col-md-10 col-centered pt-4 pb-4" >
+      <h2 class="font-weight-bold text-left mb-3 border-bottom pb-3">¿Cómo funciona INDEN?</h2>
+     
+      <div class="container pt-3">
+        <!--first section-->
+        <div class="row align-items-center how-it-works d-flex">
+          <div class="col-2 text-center  d-inline-flex justify-content-center align-items-center">
+            <div class="circle font-weight-bold">1</div>
+          </div>
+          <div class="col-6">
+            <h5>Aplicar un proceso de inscripción </h5>
+            <p>Simplemente cree una cuenta nueva, es muy simple solo ingrese los datos que se le solicitan.</p>
+          </div>
+        </div>
+        <!--path between 1-2-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
+          </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+
+        <!--second section-->
+        <div class="row align-items-center justify-content-end how-it-works d-flex">
+          <div class="col-6 text-right">
+            <h5>Realizar su compra</h5>
+            <p>Una vez que te hayas decidido por alguno de nuestros cursos preciona el boton inscribirse y realiza el pago. En el caso de requerir beca contactanos para entregarte un codigo con el cual te genera el descuento de tu beca para realizar el pago.</p>
+          </div>
+          <div class="col-2 text-center  d-inline-flex justify-content-center align-items-center">
+            <div class="circle font-weight-bold">2</div>
+          </div>
+        </div>
+        <!--path between 2-3-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner right-bottom"></div>
+          </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner top-left"></div>
+          </div>
+        </div>
+
+        <!-- 3 Realizar curso-->
+        <div class="row align-items-center how-it-works d-flex">
+          <div class="col-2 text-center d-inline-flex justify-content-center align-items-center">
+            <div class="circle font-weight-bold">3</div>
+          </div>
+          <div class="col-6">
+            <h5>Realizar curso</h5>
+            <p>Una vez realizado el pago en un lapso de 24hrs a 72hrs le llegara a su cuenta de correo que registro un nuevo enlace y una contreña nueva con la cual usted podra ingresar usando su cuenta correo electronico y la contraseña que le proporcionamos
+              y podre realizar a sus tiempos nuestro curso en el lugar que guste.</p>
+          </div>
+        </div>
+        <!--path between 3-4-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
+          </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+         <!--Al finalizar el curso-->
+        <div class="row align-items-center   justify-content-end how-it-works d-flex">
+          <div class="col-6 text-right">
+            <h5>Al finalizar el curso</h5>
+            <p>Deberás haber acreditado todas las unidades para recibir tu constancia, misma que recibirás vía correo electrónico.</p>
+          </div>
+          <div class="col-2 text-center  d-inline-flex justify-content-center align-items-center">
+            <div class="circle font-weight-bold">4</div>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="courses" class="col-md-12 mb-5 wow fadeIn mb-5">
+    <h2 class="font-weight-bold text-center mb-3 border-bottom pb-3">Cursos</h2>
+
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+        <!-- Card -->
+        <div class="card card-cascade wider card-ecommerce">
+          <!-- Card image -->
+          <div class="view view-cascade overlay">
+            <img src="img/courses/canva-creative-man-with-computer-working-at-night-office-MACzMnZQ69o.jpg" class="card-img-top" alt="sample photo">
+            <a>
+              <div class="mask rgba-white-slight waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!-- Card image -->
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+            <!-- Category & Title -->
+            <a href="" class="text-muted">
+              <h5>Ciencia</h5>
+            </a>
+            <h4 class="card-title">
+              <strong>
+                <a href="">Antropometría y calculo energético en deportistas</a>
+              </strong>
+            </h4>
+            <!-- Description -->
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit.</p>
+            <!-- Card footer -->
+            <div class="card-footer px-1">
+              <span class="float-left font-weight-bold">
+                <strong>$2000.00</strong>
+              </span>
+              <span class="float-right">
+                <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Look">
+                  <i class="fas fa-eye grey-text ml-3"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- Card content -->
+        </div>
+        <!-- Card -->
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+          <!-- Card -->
+          <div class="card card-cascade wider card-ecommerce">
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img src="img/courses/canva-businesswoman-with-computer-in-her-office-at-the-desk,-working-MACg_rn_bMM.jpg" class="card-img-top" alt="sample photo">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center">
+              <!-- Category & Title -->
+              <a href="" class="text-muted">
+                <h5>Salud</h5>
+              </a>
+              <h4 class="card-title">
+                <strong>
+                  <a href="">Diplomado en nutrición en el deporte.</a>
+                </strong>
+              </h4>
+              <!-- Description -->
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit.</p>
+              <!-- Card footer -->
+              <div class="card-footer px-1">
+                <span class="float-left font-weight-bold">
+                  <strong>$15000.00</strong>
+                </span>
+                <span class="float-right">
+                  <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Look">
+                    <i class="fas fa-eye grey-text ml-3"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+          <!-- Card -->
+          <div class="card card-cascade wider card-ecommerce">
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img src="img/courses/canva-businesswoman-working-with-portable-computer--MAB8ihkM5X4.jpg" class="card-img-top" alt="sample photo">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center">
+              <!-- Category & Title -->
+              <a href="" class="text-muted">
+                <h5>Ciencia</h5>
+              </a>
+              <h4 class="card-title">
+                <strong>
+                  <a href="">Antropometría y calculo energético en deportistas</a>
+                </strong>
+              </h4>
+              <!-- Description -->
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit.</p>
+              <!-- Card footer -->
+              <div class="card-footer px-1">
+                <span class="float-left font-weight-bold">
+                  <strong>$2000.00</strong>
+                </span>
+                <span class="float-right">
+                  <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Look">
+                    <i class="fas fa-eye grey-text ml-3"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+      <!-- Grid column -->
+
+    </div>
+  </section>
+
+  <section id="instructors" class="col-md-12 mb-5 wow fadeIn mb-5" >
+    <h2 class="section-heading">Instructores</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 mb-4">
+
+          <!--Rotating card-->
+          <div class="card-wrapper" style="height: 408px;">
+              <div id="card-3" class="card card-rotating text-center">
+
+                  <!--Front Side-->
+                  <div class="face front">
+
+                      <!-- Image-->
+                      <div class="card-up">
+                          <img src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg" class="img-fluid" alt="Image with a photo of clouds.">
+                      </div>
+                      <!--Avatar-->
+                      <div class="avatar mx-auto white">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2820%29.jpg" class="rounded-circle" alt="Sample avatar image.">
+                      </div>
+                      <!--Content-->
+                      <div class="card-body">
+                          <h4>MSP. Beatriz Martínez Zavala</h4>
+                          <p>Senior Business Partner</p>
+                          <!--Triggering button-->
+                          <a class="rotate-btn" data-card="card-3"><i class="fas fa-redo-alt"></i> Leer más ..</a>
+                      </div>
+                  </div>
+                  <!--/.Front Side-->
+
+                  <!--Back Side-->
+                  <div class="card face back" style="height: 408px;">
+
+                      <div class="card-body">
+
+                          <!--Content-->
+                          <h4>Sobre mi</h4>
+                          <hr>
+                          <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
+                              Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum
+                              repellendus, voluptatum eum, officia laudantium quaerat <i class="fas fa-quote-right"></i>
+                          </p>
+                          <hr>
+                          <!--Social Icons-->
+                          <ul class="list-inline">
+                              <li class="list-inline-item">
+                                  <a class="fa-lg p-2 m-2 fb-ic">
+                                      <i class="fab fa-facebook-f"></i>
+                                  </a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a class="fa-lg p-2 m-2 tw-ic">
+                                      <i class="fab fa-twitter"></i>
+                                  </a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a class="fa-lg p-2 m-2 li-ic">
+                                      <i class="fab fa-linkedin-in"></i>
+                                  </a>
+                              </li>
+                          </ul>
+                          <!--Triggering button-->
+                          <a class="rotate-btn" data-card="card-3"><i class="fas fa-undo"></i> Leer más ..</a>
+                      </div>
+
+                  </div>
+                  <!--/.Back Side-->
+
+              </div>
+          </div>
+          <!--/.Rotating card-->
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 mb-4">
+
+        <!--Rotating card-->
+        <div class="card-wrapper" style="height: 408px;">
+            <div id="card-2" class="card card-rotating text-center">
+
+                <!--Front Side-->
+                <div class="face front">
+
+                    <!-- Image-->
+                    <div class="card-up">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="Image with a photo of clouds.">
+                    </div>
+                    <!--Avatar-->
+                    <div class="avatar mx-auto white">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%289%29.jpg" class="rounded-circle" alt="Sample avatar image.">
+                    </div>
+                    <!--Content-->
+                    <div class="card-body">
+                        <h4>LN. Miguel Ángel Herrera</h4>
+                        <p>Director de Innovación</p>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-2"><i class="fas fa-redo-alt"></i> Leer más ..</a>
+                    </div>
+                </div>
+                <!--/.Front Side-->
+
+                <!--Back Side-->
+                <div class="card face back" style="height: 408px;">
+
+                    <div class="card-body">
+
+                        <!--Content-->
+                        <h4>Sobre mi</h4>
+                        <hr>
+                        <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
+                            Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum
+                            repellendus, voluptatum eum, officia laudantium quaerat <i class="fas fa-quote-right"></i>
+                        </p>
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="fa-lg p-2 m-2 fb-ic">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="fa-lg p-2 m-2 tw-ic">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="fa-lg p-2 m-2 li-ic">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-2">
+                            <i class="fas fa-undo"></i> Leer más ..</a>
+
+                    </div>
+
+                </div>
+                <!--/.Back Side-->
+
+            </div>
+        </div>
+        <!--/.Rotating card-->
+
+      </div>
+    </div>
+  </section>
+
+  <section id="learningMethodology" class="section pb-4 wow fadeIn bg-dark text-white" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeIn; animation-iteration-count: 1; animation-delay: 0.3s;">
+    <div class="col-lg-10 col-md-10 col-centered pt-4 pb-4 " >
+      <h1 class="font-weight-bold text-center h1 my-3 border-bottom pb-3">Metodología de aprendizaje</h1>
+      <h3 class="font-weight-bold text-center mb-3">Teoría + Práctica</h3>
+      <p class="card-text  text-left" style="font-size: 18px;">La metodología de educación a distancia que usamos incluye una amplia gama de recursos y medios con fines educativos, como materiales didácticos de apoyo, materiales audiovisuales y clases en un entorno virtual. La plataforma en la que se ofrecen los cursos permite vías de comunicación bidireccional y multidireccionales, lo que permite la comunicación con los profesores, tutores y miembros del grupo. También contamos con un sistema de apoyo por tutoría, que es una guía a distancia a lo largo del proceso de aprendizaje.</p>
+      <p class="card-text  text-left" style="font-size: 18px;">El modelo estimula el aprendizaje activo y autónomo, ya que crea ambientes tecnológicos para que los estudiantes se integren a su proceso de aprendizaje cuál sea su ubicación geográfica y temporal. Para esto, los alumnos tendrán acceso a documentos en línea, clases virtuales de los profesores, foros de discusión y material de apoyo.</p>
+      <p class="card-text  text-left" style="font-size: 18px;">Deberán enviar actividades de investigación, de recapitulación de las unidades y de actividades prácticas, así como presentar y aprobar un examen por unidad y un examen final. Durante todo el curso, los alumnos recibirán el acompañamiento de un tutor y de sus profesores para aclarar dudas, resolver necesidades particulares y supervisar sus trámites.</p>
+
+    </div>
+  </section>
+
+  
+  <section id="scholarships" class="section pb-4 wow fadeIn bg-dark text-white" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeIn; animation-iteration-count: 1; animation-delay: 0.3s;">
+  </section>
+
+  <section id="testimonials" class="section pb-4 wow fadeIn bg-dark text-white" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeIn; animation-iteration-count: 1; animation-delay: 0.3s;">
+  </section>
+
+    
+  Historias y testimonios
+  Becas y Ayudas
+  Plan de Estudios
+Chat
+Preguntas frecuentes  
+  
+</main>
+
+<!--Footer-->
+<footer class="page-footer text-center text-md-left bg_footer lighten-2 wow fadeIn">
+  <div class="bg_primaryColor  text-center py-4">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+
+            <!--Grid column-->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-md-0">
+                <h6 class="mb-0 white-text" style="color:#FFF">¡Conéctate con nosotros en las redes sociales!</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 col-lg-7 text-right text-md-right">
+              <!--GitHub-->
+              <a rel="nofollow" target="_blank" id="footer-link-github" href="https://github.com/mdbootstrap/bootstrap-material-design">
+                <i class="fab fa-github white-text mr-4"> </i>
+              </a>
+              <!--Youtube-->
+              <a rel="nofollow" target="_blank" id="footer-link-youtube" href="https://www.youtube.com/watch?v=cXTThxoywNQ">
+                <i class="fab fa-youtube white-text mr-4"> </i>
+              </a>
+              <!--Facebook-->
+              <a rel="nofollow" target="_blank" id="footer-link-facebook" href="https://www.facebook.com/mdbootstrap">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!--Twitter-->
+              <a rel="nofollow" target="_blank" id="footer-link-twitter" href="https://twitter.com/MDBootstrap">
+                <i class="fab fa-twitter white-text"> </i>
+              </a>
+
+              <a href="https://www.facebook.com/rdjpowersound" target="_blank" rel="noopener" class="fb-ic ml-0 px-2">
+                  <i class="fab fa-facebook-square facebook-white"> </i>
+              </a>                
+            </div>
+            <!--Grid column-->
+        </div>
+    </div>
+  </div>
+
+  <!--Footer Links-->
+  <div class="container pt-4">
+    <div class="row">
+
+      <!--First column-->
+      <div class="col-md-3 mr-auto">
+        <div class="text-center">
+            <img id="logo_footer" src="img/logo_dark.gif">
+        </div>
+
+        <div class="copyright text-center">
+            Todos los Derechos Reservados 2019<br>
+            <a href="index">® RDJ</a>
+        </div>
+         
+      </div>
+      <!--/.First column-->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!--Servicio al cliente-->
+      <div class="col-md-2 ml-auto">
+        <h5 class="mb-3">Servicio al cliente</h5>
+        <ul class="list-unstyled">
+          <li><a href="#!">Preguntas Frecuentes</a></li>
+          <li><a href="#!">Formas de Pago</a></li>
+          <li><a href="#!">Aviso de Privacidad</a></li>
+          <li><a href="#!">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <!--/.Servicio al cliente-->
+
+      <!--Mi Cuenta-->
+      <hr class="w-100 clearfix d-md-none">
+      <div class="col-md-2 ml-auto">
+        <h5 class="mb-3">Mi Cuenta</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Login</a>
+          </li>
+          <li>
+            <a href="#!">Perfil</a>
+          </li>
+          <li>
+            <a href="#!">Carrito</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Mi Cuenta-->
+
+      <!-- Contactanos -->
+      <hr class="w-100 clearfix d-md-none">
+      <div class="col-md-3 ml-auto">
+        <h5 class="mb-3">Contactanos</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"><i class="fas fa-envelope"></i> ventas@rdj.mx</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fab fa-facebook-messenger"></i> rdjpowersound</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fab fa-whatsapp"></i> 3333333333</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--/.Contactanos-->
+
+    </div>
+  </div>
+  <!--/.Footer Links-->
+
+  <hr>
+
+
+  <!--Copyright-->
+  <div class="footer-midgard py-3 text-center">
+    <div class="container-fluid">
+      Developed by:
+      <a href="http://midgardsystems.com.mx"> <b>Midgard Systems</b></a>
+
+    </div>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+  <!-- JQuery 
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>-->
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/compiled_4-8-7.min.js"></script>
+    
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+    <style>
+      /* Only for snippet */
+      .double-nav .breadcrumb-dn {
+        color: #fff;
+      }
+  </style>
+
+    <script>
+      $(document).ready(function(){
+        
+        $('#btnOpenRegister').on('click', function() {
+          $('#modalLRForm').modal('show');
+          $('.nav-tabs a[href="#tabRegister"]').tab('show')
+        });
+        $('#btnTabLogin').on('click', function() {
+          $('.nav-tabs a[href="#tabLogin"]').tab('show')
+        });
+
+        $('#btnTabRegister').on('click', function() {
+          $('.nav-tabs a[href="#tabRegister"]').tab('show')
+        });
+        
+        $('#btnOpenRecoverPassword').on('click', function() {
+          $('#modalRecoverPassword').modal('show');
+        });
+        
+      });
+    
+      
+        $(function(){
+
+          //navigation bar
+          $(".button-collapse").sideNav();
+
+          // Animations initialization
+          new WOW().init();
+        });
+    </script>
+    
+</body>
+  
+</html>

@@ -1,0 +1,67 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+@media only screen and (min-width: 991px) {
+    #navbar-slide, #slide-out{
+        display: none;
+    }
+    #nav-bar{
+        display: block;
+    }
+} 
+@media only screen and (max-width: 990px) {
+    #navbar-slide, #slide-out{
+        display: block;
+    }
+    #nav-bar{
+        display: none;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider--two .slider-activation-wrap--2 .owl-nav div.owl-next {
+        left: auto;
+        right: 44px;
+    } 
+    .slider--two .slider-activation-wrap--2 .owl-nav div {
+        left: 44px;
+    }
+    .arrow-down-long::before {
+        top: 0;
+    }
+    .slider-fixed-height {
+        height: 600px;
+    }
+    .slider--5 .slider-fixed-height {
+        height: 330px;
+    }    
+    .slider-activation-wrap--5.slick-initialized.slick-slider {
+        margin-left: -10px;
+        margin-right: -10px;
+    }    
+    .five-res .activation__style--1.owl-theme .owl-nav {
+        margin-top: 0;
+    }   
+    .product-details-res .activation__style--1.owl-theme .owl-nav {
+        margin-top: 0;
+    }
+    .slider--two .slider-inner {
+        margin-right: 50px;
+    }  
+    .activation__style--1.owl-theme .owl-nav {
+        margin-top: 0;
+    }      
+}

@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Midgard Systems</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <!-- Your custom styles (optional) -->
+  <link href="css/slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive Midgard -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Owl Carousel min css -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" id="wsl-widget-css" href="css/style_5.2.2.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/customeStyleColor.css">
+
+  <link rel="stylesheet" id="compiled.css-css" href="css/compiled-4.8.7.min.css?ver=4.8.7" type="text/css" media="all">
+</head>
+
+<body>
+  <!-- Modals -->
+  
+    <!-- Start Search modal -->
+    <div class="search-area bg_search">
+        <div class="container" >
+            <div class="row" >
+                <div class="col-md-12" >
+                    <div class="search-inner">
+                        <form>
+                            <input placeholder="Buscar..." type="text">
+                            <button type="submit" class="waves-effect waves-light">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <div class="search-close-btn">
+                            <span class="search-close-btn-icon">
+                                <i class="fa fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Search modal -->
+
+    <!-- Start shopping cart modal -->
+    <div class="shp-cart-panel">
+        <div class="shp-cart-inner">
+            <div class="shp-cart-btn-close">
+                <a href="#"><i class="fa fa-times"></i></a>
+            </div>
+
+            <div class="shp-cart-wrap">
+                
+                <div class="shp-cart-single-product">
+                    <div class="shp-cart-pro-thumb">
+                        <a href="#">
+                            <img src="img/products/99x119.jpg" alt="product images">
+                        </a>
+                    </div>
+                    <div class="shp-cart-product-details">
+                        <h2><a href="product-details.html">BO&amp;Play Wireless Speaker</a></h2>
+                        <span class="quantity">QTY: 1</span>
+                        <span class="shp__price">$105.00</span>
+                    </div>
+                    <div class="shp-cart-product-bn-remove">
+                        <a href="#" title="Remove this item"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="shp-cart-single-product">
+                    <div class="shp-cart-pro-thumb">
+                        <a href="#">
+                            <img src="img/products/99x119.jpg" alt="product images">
+                        </a>
+                    </div>
+                    <div class="shp-cart-product-details">
+                        <h2><a href="product-details.html">Brone Candle</a></h2>
+                        <span class="quantity">QTY: 1</span>
+                        <span class="shp__price">$25.00</span>
+                    </div>
+                    <div class="shp-cart-product-bn-remove">
+                        <a href="#" title="Remove this item"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+            <ul class="shp-cart-total">
+                <li class="subtotal">Subtotal:</li>
+                <li class="total__price">$130.00</li>
+            </ul>
+            <ul class="shopping__btn">
+                <li><a href="cart.html">View Cart</a></li>
+                <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Search modal -->
+    
+    <!-- Login / Register Form-->
+    <div id="modalLRForm" class="modal fade" role="dialog" tabindex="-1"  aria-labelledby="myModalLabel" aria-hidden="true" style="padding-right: 17px !important;">
+      <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Modal cascading tabs-->
+          <div class="modal-c-tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs md-tabs tabs-2 bg_primaryColor darken-3" role="tablist">
+              <li class="nav-item waves-effect waves-light">
+                <a class="nav-link active" data-toggle="tab" href="#tabLogin" role="tab">
+                  <i class="fas fa-user mr-1"></i> Ingresar</a>
+              </li>
+              <li class="nav-item waves-effect waves-light">
+                <a class="nav-link" data-toggle="tab" href="#tabRegister" role="tab">
+                  <i class="fas fa-user-plus mr-1"></i> Crear cuenta</a>
+              </li>
+            </ul>
+
+            <!-- Tab panels -->
+            <div class="tab-content">
+                <!--Panel Login-->
+                <div id="tabLogin" class="tab-pane fade in active show" role="tabpanel">
+    
+                  <!--Body-->
+                  <div class="modal-body mb-1">
+                    <div class="md-form form-sm">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input id="txtEmail" type="text"  class="form-control form-control-sm">
+                      <label for="txtEmail" class="">Email</label>
+                    </div>
+    
+                    <div class="md-form form-sm">
+                      <i class="fas fa-lock prefix"></i>
+                      <input id="txtPsw" type="password" class="form-control form-control-sm">
+                      <label for="txtPsw" class="">Password</label>
+                    </div>
+
+                    <div class="text-center mt-4">
+                      <button id="btnLogin" class="btn btn-info waves-effect waves-light">Ingresar
+                        <i class="fas fa-sign-in ml-1"></i>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <div class="options text-center text-md-right mt-1">
+                      <p>¿No es un miembro?
+                        <a id="btnTabRegister" class="blue-text">Regístrate</a>
+                      </p>
+                      <p>Olvidó su 
+                        <a id="btnOpenRecoverPassword" class="blue-text">Password</a>?
+                      </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                  </div>
+    
+                </div>
+                <!--/.Panel Login-->
+    
+                <!--Panel Register-->
+                <div id="tabRegister" class="tab-pane fade"  role="tabpanel">
+    
+                  <!--Body-->
+                  <div class="modal-body">
+                    <div class="md-form form-sm">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input id="txtEmail" type="text"  class="form-control form-control-sm">
+                      <label for="txtEmail">Email</label>
+                    </div>
+    
+                    <div class="md-form form-sm">
+                      <i class="fas fa-lock prefix"></i>
+                      <input id="txtPws" type="password"class="form-control form-control-sm">
+                      <label for="txtPws">Password</label>
+                    </div>
+                    
+                    <div class="text-center form-sm mt-4">
+                      <button id="btnSignUp" class="btn btn-info waves-effect waves-light">Regístrate
+                        <i class="fas fa-sign-in ml-1"></i>
+                      </button>
+                    </div>
+    
+                  </div>
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <div class="options text-right">
+                      <p class="pt-1">¿Ya tienes una cuenta?
+                        <a id="btnTabLogin" class="blue-text">Iniciar sesión</a>
+                      </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+                <!--/.Panel Register-->
+              </div>
+
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Login / Register Form-->
+
+    <!-- Recover Password --->
+    <div id="modalRecoverPassword" class="modal fade" role="dialog" tabindex="-1"  aria-labelledby="myModalLabel" aria-hidden="true" style="padding-right: 17px !important;">
+      <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Header-->
+          <div class="modal-header light-blue darken-3 white-text">
+            <h4 class="title"><i class="fas fa-unlock"></i> Recuperar Contraseña</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body mb-0">
+
+            <div class="md-form form-sm">
+              <i class="fas fa-envelope prefix"></i>
+              <input id="txtRecoverEmail" type="text"  class="form-control form-control-sm">
+              <label for="txtRecoverEmail" class="">Email</label>
+            </div>
+
+            <div class="text-center mt-4">
+              <button id="btnRecoerAccount" class="btn btn-info waves-effect waves-light">Recuperar contraseña
+                <i class="fas fa-sign-in ml-1"></i>
+              </button>
+            </div>
+          </div>
+ 
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!-- Recover Password -->
+
+  <!-- Modals -->
+
+  <!-- Nav bars -->
+    <!-- Navbar black darken-4--> 
+    <nav id="nav-bar" class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark  scrolling-navbar navbar-transparent">
+
+      <div class="float-left">
+        <!-- Navbar brand -->
+        <a class="navbar-brand text-uppercase" href="#">
+          <img id="navbarLogo" src="img/logo_transparent.png" height="30" alt="mdb logo">
+        </a>
+      </div>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+    
+        <!-- Menu -->
+        <ul class="navbar-nav ml-auto"><!-- ml-auto  mr-auto-->
+    
+          <li class="nav-item menu-primary selected">
+            <a class="nav-link waves-effect waves-light" href="#">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+
+          <!-- Features -->
+          <li class="nav-item menu-primary dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Features
+              <span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 black darken-4 py-5 px-3"
+              aria-labelledby="navbarDropdownMenuLink2">
+              <div class="row">
+                <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                  <h6 class="sub-title font-weight-bold white-text">Featured</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                        architecto
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology -->
+          <li class="nav-item menu-primary dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Technology</a>
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 lighten-4 py-5 px-3" style="background-color: #181a1e!important"
+              aria-labelledby="navbarDropdownMenuLink3">
+              <div class="row">
+                <div class="col-md-12 col-xl-4 sub-menu mb-xl-0 mb-4">
+                  <h6 class="sub-title font-weight-bold white-text">Featured</h6>
+                  <!--Featured image-->
+                  <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/8-col/img%20(37).jpg"
+                      class="img-fluid" alt="First sample image">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                  <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+                  <p class="font-small white-text">
+                    <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                      class="far fa-comments px-1" aria-hidden="true"></i> 20
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
+                  <h6 class="sub-title  font-weight-bold white-text">Related</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-4 sub-menu mb-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Lifestyle -->
+          <li class="nav-item menu-primary dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink4" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Lifestyle</a>
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3" style="background-color: #181a1e!important"
+              aria-labelledby="navbarDropdownMenuLink4">
+              <div class="row">
+                <div class="col-md-6 col-xl-3 sub-menu mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-4 mb-xl-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+                  <!--Featured image-->
+                  <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg"
+                      class="img-fluid" alt="First sample image">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                  <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+                  <p class="font-small text-uppercase white-text">
+                    <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                      class="far fa-comments px-1" aria-hidden="true"></i> 20
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+                  <!--Featured image-->
+                  <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg"
+                      class="img-fluid" alt="First sample image">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                  <a class="news-title font-weight-bold pl-0" href="#!">Ut labore et dolore magna</a>
+                  <p class="font-small text-uppercase white-text">
+                    <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 16, 2017 / <i
+                      class="far fa-comments px-1" aria-hidden="true"></i> 25
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-3 sub-menu mb-0">
+                  <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                        architecto
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-item pl-0" href="#!">
+                        <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Multi-level dropdown -->
+          <li class="nav-item menu-primary dropdown multi-level-dropdown">
+            <a href="#" id="menu" data-toggle="dropdown"
+              class="nav-link dropdown-toggle "><i class="fas fa-user"></i>
+            </a>
+            <ul class="dropdown-menu mt-2 rounded-0  darken-4 border-0 z-depth-1" style="background-color: #181a1e!important;">
+              <li class="dropdown-item dropdown-submenu p-0">
+                <a href="" class="text-white w-100" data-toggle="modal" data-target="#modalLRForm" style="text-transform: capitalize;">Ingresar</a>
+              </li>
+              <li class="dropdown-item dropdown-submenu p-0">
+                <a id="btnOpenRegister"  class="text-white w-100" style="text-transform: capitalize;">Crear cuenta</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Search -->
+          <li class="nav-item menu-secondary">
+            <a class="nav-link waves-effect waves-light header-search search search-open" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <!-- Shopping cart -->
+          <li id="shopping-cart" class="nav-item menu-secondary">
+            <a class="nav-link waves-effect waves-light" href="#">
+              <i class="fas fa-shopping-cart"></i>        
+            </a>  
+            <span class="counter-item">2</span> 
+          </li>
+        </ul>
+        <!-- Links -->
+    
+    
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+    <!-- Navbar -->   
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav">
+      <ul class="custom-scrollbar">
+        <!-- Logo -->
+        <li>
+            <div class="logo-wrapper waves-light">
+              <a href="#"><img src="img/logo_dark.gif" class="img-fluid flex-center"></a>
+            </div>
+        </li>
+        <!--/. Logo -->
+        <!--Social
+        <li>
+            <ul class="social">
+            <li><a href="#" class="icons-sm fb-ic"><i class="fab fa-facebook-f"> </i></a></li>
+            <li><a href="#" class="icons-sm pin-ic"><i class="fab fa-pinterest"> </i></a></li>
+            <li><a href="#" class="icons-sm gplus-ic"><i class="fab fa-google-plus-g"> </i></a></li>
+            <li><a href="#" class="icons-sm tw-ic"><i class="fab fa-twitter"> </i></a></li>
+            </ul>
+        </li>
+        <--/Social-->
+        <!--Search Form-->
+        <li>
+            <form class="search-form" role="search">
+              <div class="form-group md-form mt-0 pt-1 waves-light">
+                  <input type="text" class="form-control" placeholder="Buscar...">
+              </div>
+            </form>
+        </li>
+        <!--/.Search Form-->
+        <!-- Side navigation links -->
+        <li>
+            <ul class="collapsible collapsible-accordion">
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Submit
+                blog<i class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">Submit listing</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Registration form</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-hand-pointer-o"></i>
+                Instruction<i class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">For bloggers</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">For authors</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                Cuenta <i class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">Ingresar</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Crear cuenta</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-envelope-o"></i> Contact me<i
+                    class="fas fa-angle-down rotate-icon"></i></a>
+                <div class="collapsible-body">
+                <ul>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">FAQ</a>
+                    </li>
+                    <li><a href="#" class="waves-effect">Write a message</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            </ul>
+        </li>
+        <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+    </div>
+    
+    <nav id="navbar-slide" class="mb-5 navbar fixed-top  navbar-expand-lg white scrolling-navbar double-nav" style="position: fixed;overflow: hidden;background-color: #fff;">
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+          <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="fas fa-bars" style="color: #000;"></i>
+          </a>
+        </div>
+
+        <!-- Logo -->
+        <div class="float-left">
+              <!-- Navbar brand -->
+              <a class="navbar-brand text-uppercase" href="#">
+                  <img src="img/logo_transparent.png" alt="mdb logo">
+              </a>
+          </div>
+          
+        <ul class="navbar-nav ml-auto"><!-- ml-auto  mr-auto-->
+      
+
+            
+            <!-- Shopping cart -->
+            <li  id="shopping-cart" class="nav-item menu-secondary">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fas fa-shopping-cart"></i>        
+              </a>  
+              <span class="counter-item">2</span> 
+            </li>
+          </ul>
+          
+        
+    </nav>
+  <!-- Nav bars -->
+
+<main>
+    <div class="page-override bg-img-profile bg-fixed bg-profile-primary">
+        <div class="container">
+
+            <ol class="breadcrumb bg_primaryColor mb-5">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Library</a>
+                </li>
+                <li class="breadcrumb-item active">Data</li>
+            </ol>
+
+        
+            <div class="text-center mt-2">
+                <img id="avatarProfile" src="img/users/avatar1.jpg" class="avatar-profile animated zoomIn animation-delay-7">            
+                <h1 class="text-white mt-4 animated fadeInUp animation-delay-10">Gabriel Vazquez</h1>  
+            </div>
+        
+            <section class="row pb-5">
+                <div class="col-md-12 mb-5">
+    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs bg_primaryColor nav-justified">
+                        <li class="nav-item waves-effect waves-light">
+                            <a class="nav-link" data-toggle="tab" href="#panelMyShopping" role="tab" aria-selected="false">Mis Compras</a>
+                        </li>
+                        <li class="nav-item waves-effect waves-light">
+                            <a class="nav-link" data-toggle="tab" href="#panelWishList" role="tab" aria-selected="false">Lista de deseos</a>
+                        </li>
+                        <li class="nav-item waves-effect waves-light">
+                            <a class="nav-link active show" data-toggle="tab" href="#panelProfile" role="tab" aria-selected="true">Perfil</a>
+                        </li>
+    
+                        <li class="nav-item waves-effect waves-light">
+                            <a class="nav-link" data-toggle="tab" href="#panelAddresses" role="tab" aria-selected="false">Direcciónes</a>
+                        </li>
+                    </ul>
+    
+                    <!-- Tab panels -->
+                    <div class="tab-content card">
+                        <!--Mis Compas -->
+                        <div class="tab-pane fade in" id="panelMyShopping" role="tabpanel">
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-lg-12 text-center">
+                                    <h2>Aún no tienes compras realizadas en esta tienda</h2>
+                                </div>                           
+                            </div>
+                        </div>
+                        <!--/.Panel 1-->
+                        <!--Panel 2-->
+                        <div class="tab-pane fade" id="panelWishList" role="tabpanel">
+                            <br>
+                            <div id="noWish" class="row">
+                                
+                                <div class="col-md-4">
+
+                                    <!-- Card Wider -->
+                                    <div class="card card-cascade wider mb-4">
+                        
+                                        <!-- Card image -->
+                                        <div class="view view-cascade overlay">
+                                            <img class="card-img-top" src="http://localhost/Repositorios/rdj-ecommerce/assets/imgs/products/alarma-viper-1002/Prod_Autob_Alarma-Viper1002.jpg" alt="Card image cap">
+                                            <a href="#!">
+                                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                            </a>
+                                        </div>
+                        
+                                        <!-- Card content -->
+                                        <div class="card-body card-body-cascade text-center">
+                                        <!-- Category & Title -->
+                                        <a href="alarmas" class="text-muted">
+                                            <h5>Alarmas</h5>
+                                        </a>
+                                        
+                                        <h4 class="card-title">
+                                            <strong>
+                                                <a href="alarma-ruptura-de-cristales-gs-100b">Sensor de ruptura de cristales GS-100B</a>
+                                            </strong>
+                                        </h4>
+
+                                        <!-- Rating -->                           
+                                        <ul class="rating">
+                                            <li><i class="fas fa-star yellow-text"></i></li><li><i class="fas fa-star yellow-text"></i></li><li><i class="fas fa-star yellow-text"></i></li><li><i class="fas fa-star yellow-text"></i></li><li><i class="fas fa-star yellow-text"></i></li>
+                                        </ul>
+
+                                        <!-- Description -->
+                                        <p class="card-text"></p>
+                                        
+                                        <!-- Card footer -->
+                                        <div class="card-footer px-1">
+                                            <span class="float-left font-weight-bold">
+                                                <strong>$ 2</strong>
+                                            </span>
+                                            <span class="float-right">
+                                                <a href="alarma-ruptura-de-cristales-gs-100b" class="wish-view" data-toggle="tooltip" data-placement="top" title="Sensor de ruptura de cristales GS-100B" name="Sensor de ruptura de cristales GS-100B" data-original-title="Sensor de ruptura de cristales GS-100B">
+                                                    <i class="fa fa-eye ml-3"></i>
+                                                </a>
+                                                <a class="wish-trash" data-toggle="tooltip" data-placement="top" title="Sensor de ruptura de cristales GS-100B" name="Sensor de ruptura de cristales GS-100B" data-original-title="Sensor de ruptura de cristales GS-100B" idproduct="7" image="http://localhost/Repositorios/rdj-ecommerce/assets/imgs/products/alarma-ruptura-de-cristales-gs-100b/770250-MLM28059889866.jpg" price="2">
+                                                    <i class="fa fa-trash ml-3"></i>
+                                                </a>
+                                                <a class="wish-shopping-cart" data-toggle="tooltip" data-placement="top" title="Sensor de ruptura de cristales GS-100B" name="Sensor de ruptura de cristales GS-100B" data-original-title="Sensor de ruptura de cristales GS-100B" idproduct="7" image="http://localhost/Repositorios/rdj-ecommerce/assets/imgs/products/alarma-ruptura-de-cristales-gs-100b/770250-MLM28059889866.jpg" price="2">
+                                                    <i class="fas fa-shopping-cart ml-3"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                        
+                                    </div>
+                                    <!-- Card Wider -->
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 2-->
+    
+                        <!--Panel 3 Perfil -->
+                        <div class="tab-pane fade active show" id="panelProfile" role="tabpanel">
+                            <br>
+                            <div class="row">
+                                <div class="col-xl-4 col-md-3 col-sm-4 col-xs-12 text-center col-12">
+                                    <br>
+                                    <figure id="imgProfile">
+                                        <img id="avatarProfileCurrent" src="img/users/avatar1.jpg" class="img-thumbnail">                                                            
+                                    </figure>
+                                    <br>
+
+                                    <button type="button" class="btn btn-tertiaryColor text-white waves-effect waves-light" id="btnChangePhoto">
+                                        Cambiar foto de perfil
+                                    </button>
+                                    <div id="uploadImage" style="display: none;">
+                                        <input type="file" class="form-control " id="dataImage" name="dataImage">
+                                        <!--<img class="preview">-->
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-7 col-12">
+                                    <div class="card-body">
+                                        <h2 style="text-align: center;" class="color-primary no-mb text-dark-MidgardCommerce">Información personal</h2>
+                                    </div>
+                                    
+                                    <table class="table table-no-border table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th><i class="fa fa-face mr-1 color-warning"></i> Nombre completo</th>
+                                                <td>Gabriel Vazquez</td>
+                                            </tr>
+        
+                                            <tr>
+                                                <th><i class="fa fa-email mr-1 color-primary"></i> Email</th>
+                                                <td>
+                                                    gabriel.vazquezruiz@gmail.com
+                                                </td>
+                                            </tr>
+        
+                                            <tr>
+                                                <th><i class="fa fa- mr-1 color-primary"></i> Modo de registro</th>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th><i class="fa fa-calendar mr-1 color-info"></i> Miembro desde</th>
+                                                <td></td>
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
+                                    
+                                    <div class="row">
+                                        <a id="modalProfileUpdate" data-toggle="modal" data-target="#modalProfile" style="text-align: center;" class="col-md-12 btn btn-primaryColor btn-lg waves-effect waves-light">Actualizar datos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Panel 3-->
+    
+                        <!--Panel 4 Address-->
+                        <div class="tab-pane fade" id="panelAddresses" role="tabpanel">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 card-body">
+                                    <h2 style="text-align: center;" class="color-primary no-mb text-dark-MidgardCommerce">Direcciónes</h2>
+                                </div>
+    
+                                <div id="mylistAddress" class="row col-md-12">
+                                               
+                                    <div id="address_14" class="col-md-4 mt-2">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                <b>The last</b><br>
+                                                grefdwsq<br>
+                                                Tlaquepaque, Jalisco #34543<br>
+                                                México<br>
+                                                Telefono: we87654321<br> 
+                                            </div>
+                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="14" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="14" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="14" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="address_13" class="col-md-4 mt-2">
+                                        <div class="card selected">
+                                            <div class="card-body">
+                                                <b>tet 1</b><br>
+                                                bhtew<br>
+                                                Zapopan, Jalisco #y5htgeqw<br>
+                                                México<br>
+                                                Telefono: 765432<br> 
+                                            </div>
+                                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="13" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="13" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="13" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="address_12" class="col-md-4 mt-2">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                <b>Julio Hernandez</b><br>
+                                                loma bonita<br>
+                                                Zapopan, Jalisco #123678<br>
+                                                México<br>
+                                                Telefono: 23454321<br> 
+                                            </div>
+                                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="12" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="12" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="12" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="address_11" class="col-md-4 mt-2">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                <b>Test new</b><br>
+                                                Test direccion<br>
+                                                Zapopan, Jalisco #45560<br>
+                                                México<br>
+                                                Telefono: 3456532<br> 
+                                            </div>
+                                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="11" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="11" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="11" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="address_10" class="col-md-4 mt-2">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                <b>Gabriel Vazqez</b><br>
+                                                Pri Jardinero<br>
+                                                Zapopan, Jalisco #44224<br>
+                                                México<br>
+                                                Telefono: 34806644<br> 
+                                            </div>
+                                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="10" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="10" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="10" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="address_7" class="col-md-4 mt-2">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                <b>Julio Hernandez</b><br>
+                                                loma bonita<br>
+                                                Zapopan, Jalisco #123678<br>
+                                                México<br>
+                                                Telefono: 23454321<br> 
+                                            </div>
+                                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="7" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="7" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="7" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="address_6" class="col-md-4 mt-2">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                <b>Test new</b><br>
+                                                Test direccion<br>
+                                                Zapopan, Jalisco #45560<br>
+                                                México<br>
+                                                Telefono: 3456532<br> 
+                                            </div>
+                                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="6" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="6" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="6" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="address_5" class="col-md-4 mt-2">
+                                        <div class="card ">
+                                            <div class="card-body">
+                                                <b>Gabriel Vazqez</b><br>
+                                                Pri Jardinero<br>
+                                                Zapopan, Jalisco #44224<br>
+                                                México<br>
+                                                Telefono: 34806644<br> 
+                                            </div>
+                                            
+                                            <div class="card-footer pb-1 pt-1">
+                                                <div class="row mb-0">
+                                                    <span class="btTextRight col-12">
+                                                        <a class="btnSelectedAddress" idaddress="5" title="Seleccionar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="far fa-check-square  ml-3"></i>
+                                                        </a>
+                                                        <a data-toggle="modal" data-target="#modalAddress" class="btnUpdateAddress" idaddress="5" title="Editar dirección" data-placement="top">
+                                                            <i class="fas fa-edit ml-3"></i>
+                                                        </a>
+                                                        <a class="btnDeleteAddress" idaddress="5" title="Eliminar dirección" data-toggle="tooltip" data-placement="top">
+                                                            <i class="fas fa-trash-alt  ml-3"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                    
+                                <div class="col-md-4 mt-2 mb-2 ">
+                                    <a data-toggle="modal" data-target="#modalAddress" style="text-align: center;" class="col-md-12 btn btn-primaryColor btn-lg opeNewAddress waves-effect waves-light">Agregar dirección</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--/.Panel 4-->
+                    </div>
+    
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<!--Footer-->
+<footer class="page-footer text-center text-md-left bg_footer lighten-2 wow fadeIn">
+  <div class="bg_primaryColor  text-center py-4">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+
+            <!--Grid column-->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-md-0">
+                <h6 class="mb-0 white-text" style="color:#FFF">¡Conéctate con nosotros en las redes sociales!</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 col-lg-7 text-right text-md-right">
+              <!--GitHub-->
+              <a rel="nofollow" target="_blank" id="footer-link-github" href="https://github.com/mdbootstrap/bootstrap-material-design">
+                <i class="fab fa-github white-text mr-4"> </i>
+              </a>
+              <!--Youtube-->
+              <a rel="nofollow" target="_blank" id="footer-link-youtube" href="https://www.youtube.com/watch?v=cXTThxoywNQ">
+                <i class="fab fa-youtube white-text mr-4"> </i>
+              </a>
+              <!--Facebook-->
+              <a rel="nofollow" target="_blank" id="footer-link-facebook" href="https://www.facebook.com/mdbootstrap">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!--Twitter-->
+              <a rel="nofollow" target="_blank" id="footer-link-twitter" href="https://twitter.com/MDBootstrap">
+                <i class="fab fa-twitter white-text"> </i>
+              </a>
+
+              <a href="https://www.facebook.com/rdjpowersound" target="_blank" rel="noopener" class="fb-ic ml-0 px-2">
+                  <i class="fab fa-facebook-square facebook-white"> </i>
+              </a>                
+            </div>
+            <!--Grid column-->
+        </div>
+    </div>
+  </div>
+
+  <!--Footer Links-->
+  <div class="container pt-4">
+    <div class="row">
+
+      <!--First column-->
+      <div class="col-md-3 mr-auto">
+        <div class="text-center">
+            <img id="logo_footer" src="img/logo_dark.gif">
+        </div>
+
+        <div class="copyright text-center">
+            Todos los Derechos Reservados 2019<br>
+            <a href="index">® RDJ</a>
+        </div>
+         
+      </div>
+      <!--/.First column-->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!--Servicio al cliente-->
+      <div class="col-md-2 ml-auto">
+        <h5 class="mb-3">Servicio al cliente</h5>
+        <ul class="list-unstyled">
+          <li><a href="#!">Preguntas Frecuentes</a></li>
+          <li><a href="#!">Formas de Pago</a></li>
+          <li><a href="#!">Aviso de Privacidad</a></li>
+          <li><a href="#!">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <!--/.Servicio al cliente-->
+
+      <!--Mi Cuenta-->
+      <hr class="w-100 clearfix d-md-none">
+      <div class="col-md-2 ml-auto">
+        <h5 class="mb-3">Mi Cuenta</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Login</a>
+          </li>
+          <li>
+            <a href="#!">Perfil</a>
+          </li>
+          <li>
+            <a href="#!">Carrito</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Mi Cuenta-->
+
+      <!-- Contactanos -->
+      <hr class="w-100 clearfix d-md-none">
+      <div class="col-md-3 ml-auto">
+        <h5 class="mb-3">Contactanos</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"><i class="fas fa-envelope"></i> ventas@rdj.mx</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fab fa-facebook-messenger"></i> rdjpowersound</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fab fa-whatsapp"></i> 3333333333</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--/.Contactanos-->
+
+    </div>
+  </div>
+  <!--/.Footer Links-->
+
+  <hr>
+
+
+  <!--Copyright-->
+  <div class="footer-midgard py-3 text-center">
+    <div class="container-fluid">
+      Developed by:
+      <a href="http://midgardsystems.com.mx"> <b>Midgard Systems</b></a>
+
+    </div>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+  <!-- JQuery 
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>-->
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/compiled_4-8-7.min.js"></script>
+    
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+    <style>
+      /* Only for snippet */
+      .double-nav .breadcrumb-dn {
+        color: #fff;
+      }
+  </style>
+
+    <script>
+      $(document).ready(function(){
+        
+        $('#btnOpenRegister').on('click', function() {
+          $('#modalLRForm').modal('show');
+          $('.nav-tabs a[href="#tabRegister"]').tab('show')
+        });
+        $('#btnTabLogin').on('click', function() {
+          $('.nav-tabs a[href="#tabLogin"]').tab('show')
+        });
+
+        $('#btnTabRegister').on('click', function() {
+          $('.nav-tabs a[href="#tabRegister"]').tab('show')
+        });
+        
+        $('#btnOpenRecoverPassword').on('click', function() {
+          $('#modalRecoverPassword').modal('show');
+        });
+        
+      });
+    
+      
+        $(function(){
+
+          //navigation bar
+          $(".button-collapse").sideNav();
+
+          // Animations initialization
+          new WOW().init();
+        });
+    </script>
+    
+</body>
+  
+</html>

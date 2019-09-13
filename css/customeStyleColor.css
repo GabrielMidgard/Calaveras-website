@@ -1,0 +1,108 @@
+.primaryColor{ color:#344F95; }
+.secundaryColor{ color:#777278; }
+.tertiaryColor{ color:#29b965; }
+.lightColor{ color:#486ccb; }
+.darkColor{ color:#222222; }
+
+.bg_primaryColor{ background-color:#344F95 !important; }
+.bg_secundaryColor{ background-color:#777278 !important; }
+.bg_tertiaryColor{ background-color:#29b965 !important; }
+.bg_lightColor{ background-color:#486ccb !important; }
+.bg_darkColor{ background-color:#222222 !important; }
+
+.btn-primaryColor{ background-color:#344F95 !important; color:#FFFFFF !important;}
+.btn-secundaryColor{ background-color:#777278 !important; color:#FFFFFF !important;}
+.btn-tertiaryColor{ background-color:#29b965 !important; color:#FFFFFF !important;}
+.btn-listWish{background-color:#ea4c4c !important; color:#FFFFFF !important;}
+.btn-listWish:hover{background-color:#d50000 !important; color:#FFFFFF !important;}
+.bg_menu{ background-color:#000000; }
+.bg_footer{ background-color:#000000 !important; }
+.bg_search{background-color:#344F95 !important;}
+.shp-cart-btn-close a:hover i{
+    color: #344F95;
+}
+.shp-cart-product-bn-remove a:hover i {
+    color: #344F95;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.product-size input:checked ~ label {
+    color: #344F95;
+    border-color: #344F95;
+}
+.product-size label:hover {
+    color: #344F95;
+    cursor: pointer;
+    border-color: #344F95;
+}
+
+.product-color input:checked ~ label {
+    border: 2px solid #344F95;
+}
+.product-color label:hover {
+	cursor: pointer;
+	border: 2px solid #344F95;
+}
+
+.color_search_icon{}
+.color_search_icon_hover{}
+.color_btn_close{}
+.input_border_focus{}
+
+.navbar-transparent ul li a{
+    color:#FFFFFF !important;
+}
+.navbar-transparent ul li a:hover{
+    color:#344F95 !important;
+}
+
+.slider-activation-wrap .owl-nav div { /*lightColor*/
+    background: #486ccb none repeat scroll 0 0;
+}
+.slider-activation-wrap .owl-nav div:hover { /*primaryColor*/
+    background: #344F95 none repeat scroll 0 0;
+}
+
+/* Botton */
+.btn-primaryColor:hover {
+    background-color: #486ccb;
+    color: #fff; 
+}
+.btn-primaryColor:focus, .btn-primaryColor.focus {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); 
+}
+.btn-primaryColor:focus, .btn-primaryColor:active, .btn-primaryColor.active {
+    background-color: #344F95; 
+}
+.btn-primaryColor.dropdown-toggle {
+    background-color: #486ccb !important; }
+.btn-primaryColor.dropdown-toggle:hover, .btn-primaryColor.dropdown-toggle:focus {
+    background-color: #486ccb !important; }
+.btn-primaryColor:not([disabled]):not(.disabled):active, .btn-primaryColor:not([disabled]):not(.disabled).active,
+.show > .btn-primaryColor.dropdown-toggle {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    background-color: #344F95 !important; }
+.btn-primaryColor:not([disabled]):not(.disabled):active:focus, .btn-primaryColor:not([disabled]):not(.disabled).active:focus,
+.show > .btn-primaryColor.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
+
+
+    /* dark colorcard-header */
+    .card-header-darkColor {
+        text-align: center;
+        color: #FFFFFF;
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,.8);
+        border-bottom: 1px solid rgba(0,0,0,.8);
+    }
+    
+    .card-header-darkColor:first-child {
+        background-color: rgba(0,0,0,.6);
+        border-bottom: 1px solid rgba(0,0,0,.6);
+    }
