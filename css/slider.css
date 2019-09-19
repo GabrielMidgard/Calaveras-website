@@ -64,7 +64,7 @@
     background: #313131 none repeat scroll 0 0;
     color: #fff;
 }
-.slide__thumb {
+.slide-thumb {
     text-align: right;
 }
 
@@ -140,7 +140,7 @@
           animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
 } 
 
-.owl-item.active .single-slide.animation-style-1 .slide__thumb{
+.owl-item.active .single-slide.animation-style-1 .slide-thumb{
     -webkit-animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
             animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
 } 

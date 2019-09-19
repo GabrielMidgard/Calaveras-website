@@ -17,7 +17,7 @@
 .btn-listWish:hover{background-color:#d50000 !important; color:#FFFFFF !important;}
 .bg_menu{ background-color:#000000; }
 .bg_footer{ background-color:#000000 !important; }
-.bg_search{background-color:#344F95 !important;}
+.bg-search{background-color:#344F95 !important;}
 .shp-cart-btn-close a:hover i{
     color: #344F95;
 }
